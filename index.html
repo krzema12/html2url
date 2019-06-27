@@ -1,0 +1,16 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>html2url</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let searchParamWithQuestionMark = window.location.search
+      let searchParam = searchParamWithQuestionMark.substring(1)
+      let htmlFromSearchParam = decodeURIComponent(searchParam)
+      document.body.innerHTML = htmlFromSearchParam
+    </script>
+  </body>
+</html>
